@@ -20,3 +20,10 @@ const driversByRevenue = function(drivers){
   });
   return sorted;
 }
+
+const driversByName = function(drivers){
+  let myDrivers = drivers.slice(0);
+  let sorted = myDrivers.sort(function(a, b){
+    return 
+  })
+}
