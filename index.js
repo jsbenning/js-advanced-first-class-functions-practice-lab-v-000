@@ -24,10 +24,11 @@ const driversByRevenue = function(drivers){
 const driversByName = function(drivers){
   let myDrivers = drivers.slice(0);
   let sorted = myDrivers.sort(function(a, b){
-    if (nameA < nameB) 
-      return -1 
-    if (nameA > nameB)
-      return 1
+    if (nameA < nameB) {
+      return -1; 
+    } else if (nameA > nameB) {
+      return 1;
+    }
     return 0 //default return value (no sorting) 
   })
 }
