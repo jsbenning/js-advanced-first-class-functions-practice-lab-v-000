@@ -31,4 +31,5 @@ const driversByName = function(drivers){
     }
     return 0; 
   });
+  return sorted;
 }
