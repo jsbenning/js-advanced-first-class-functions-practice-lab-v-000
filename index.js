@@ -24,6 +24,8 @@ const driversByRevenue = function(drivers){
 const driversByName = function(drivers){
   let myDrivers = drivers.slice(0);
   let sorted = myDrivers.sort(function(a, b){
+    let nameA = a.name.toLowerCase();
+    let nameB = b.name.toLowerCase();
     if (nameA < nameB) {
       return -1; 
     } else if (nameA > nameB) {
