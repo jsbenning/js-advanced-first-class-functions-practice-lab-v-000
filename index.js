@@ -14,7 +14,7 @@ const logDriversByHometown = function(drivers, loc){
 }
 
 const driversByRevenue = function(drivers){
-  let myDrivers = Object.assign({}, drivers);
+  let myDrivers = drivers.splice();
   let sorted = myDrivers.sort(function(a, b) {
     return a.revenue - b.revenue;
   });
