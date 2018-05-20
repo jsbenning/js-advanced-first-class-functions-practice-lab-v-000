@@ -29,6 +29,6 @@ const driversByName = function(drivers){
     } else if (nameA > nameB) {
       return 1;
     }
-    return 0 //default return value (no sorting) 
-  })
+    return 0; 
+  });
 }
