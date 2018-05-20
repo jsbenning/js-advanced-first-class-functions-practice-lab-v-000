@@ -37,7 +37,7 @@ const driversByName = function(drivers){
 }
 
 const totalRevenue = function(drivers){
-  let sorted = drivers.reduce(function(el, sum){
+  let sorted = drivers.reduce(function(sum, el){
     return el.revenue + sum;
   }, 0);
   return sorted;
